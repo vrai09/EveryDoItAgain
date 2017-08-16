@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-#import "EveryDoAgain+CoreDataModel.h"
+#import "ToDo+CoreDataProperties.h"
+
 
 @class DetailViewController;
 
@@ -16,7 +17,7 @@
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 
-@property (strong, nonatomic) NSFetchedResultsController<Event *> *fetchedResultsController;
+@property (strong, nonatomic) NSFetchedResultsController<ToDo *> *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 
